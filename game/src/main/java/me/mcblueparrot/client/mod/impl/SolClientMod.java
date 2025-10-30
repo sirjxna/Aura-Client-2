@@ -28,10 +28,10 @@ public class SolClientMod extends ConfigOnlyMod {
 	public boolean logoInInventory;
 
 	@ConfigOption("Mods Key")
-	public KeyBinding modsKey = new KeyBinding("Mods", Keyboard.KEY_RSHIFT, "Sol Client");
+	public KeyBinding modsKey = new KeyBinding("Mods", Keyboard.KEY_RSHIFT, "Aura Client 2");
 
 	@ConfigOption("Edit HUD Key")
-	public KeyBinding editHudKey = new KeyBinding("Edit HUD", Keyboard.KEY_GRAVE, "Sol Client");
+	public KeyBinding editHudKey = new KeyBinding("Edit HUD", Keyboard.KEY_GRAVE, "Aura Client 2");
 
 	@Expose
 	@ConfigOption("UI Colour")
@@ -58,8 +58,8 @@ public class SolClientMod extends ConfigOnlyMod {
 	@ConfigOption("Fancy Font")
 	public boolean fancyFont = true;
 
-    public SolClientMod() {
-        super("Aura Client 2", "auraclient", "Settings for Aura Client 2.", ModCategory.NONE);
+	public SolClientMod() {
+		super("Aura Client 2", "auraclient", "Settings for Aura Client 2.", ModCategory.NONE);
 		instance = this;
 		Client.INSTANCE.registerKeyBinding(modsKey);
 		Client.INSTANCE.registerKeyBinding(editHudKey);

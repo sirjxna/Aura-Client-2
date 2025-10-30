@@ -26,11 +26,11 @@ public class ZoomMod extends Mod implements PrimaryIntegerSettingMod {
 	public static ZoomMod instance;
 
 	@ConfigOption("Zoom Key")
-	private KeyBinding key = new KeyBinding("Zoom", Keyboard.KEY_C, "Sol Client");
+	private KeyBinding key = new KeyBinding("Zoom", Keyboard.KEY_C, "Aura Client 2");
 	@ConfigOption("Zoom Out")
-	private KeyBinding zoomOutKey = new KeyBinding("Zoom Out", Keyboard.KEY_MINUS, "Sol Client");
+	private KeyBinding zoomOutKey = new KeyBinding("Zoom Out", Keyboard.KEY_MINUS, "Aura Client 2");
 	@ConfigOption("Zoom In")
-	private KeyBinding zoomInKey = new KeyBinding("Zoom In", Keyboard.KEY_EQUALS, "Sol Client");
+	private KeyBinding zoomInKey = new KeyBinding("Zoom In", Keyboard.KEY_EQUALS, "Aura Client 2");
 
 	@Expose
 	@ConfigOption("Cinematic")

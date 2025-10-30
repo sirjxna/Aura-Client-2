@@ -16,7 +16,7 @@ import net.minecraft.client.settings.KeyBinding;
 public class TaplookMod extends Mod {
 
 	@ConfigOption("Key")
-	private KeyBinding key = new KeyBinding("Taplook", 0, "Sol Client");
+	private KeyBinding key = new KeyBinding("Taplook", 0, "Aura Client 2");
 	private int previousPerspective;
 	private boolean active;
 	@Expose

@@ -148,7 +148,7 @@ public class ChatMod extends HudMod {
 		super("Chat", "chat", "Improves and allows customisation of the chat.");
 		instance = this;
 
-		peekKey = new KeyBinding("Chat Peek", 0, "Sol Client");
+		peekKey = new KeyBinding("Chat Peek", 0, "Aura Client 2");
 
 		Client.INSTANCE.registerKeyBinding(peekKey);
 	}

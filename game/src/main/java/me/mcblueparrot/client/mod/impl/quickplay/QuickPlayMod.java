@@ -26,7 +26,7 @@ import net.minecraft.client.settings.KeyBinding;
 public class QuickPlayMod extends Mod {
 
 	@ConfigOption("Key")
-	public KeyBinding menuKey = new KeyBinding("Quick Play", Keyboard.KEY_M, "Sol Client");
+	public KeyBinding menuKey = new KeyBinding("Quick Play", Keyboard.KEY_M, "Aura Client 2");
 	private QuickPlayDatabase database;
 	@Expose
 	private List<String> recentlyPlayed = new ArrayList<>();

@@ -20,7 +20,7 @@ import net.minecraft.util.MathHelper;
 public class FreelookMod extends Mod {
 
 	@ConfigOption("Key")
-	private KeyBinding key = new KeyBinding("Freelook", Keyboard.KEY_V, "Sol Client");
+	private KeyBinding key = new KeyBinding("Freelook", Keyboard.KEY_V, "Aura Client 2");
 	private float yaw;
 	private float pitch;
 	private int previousPerspective;

@@ -404,7 +404,7 @@ class Launcher {
 		args.push("net.minecraft.launchwrapper.Launch");
 
 		args.push("--version");
-		args.push("Sol Client");
+		args.push("Aura Client 2");
 
 		args.push("--username");
 		args.push(this.account.username);

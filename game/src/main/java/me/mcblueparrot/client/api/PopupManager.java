@@ -23,8 +23,8 @@ public class PopupManager {
 
 	private Minecraft mc = Minecraft.getMinecraft();
 
-	private KeyBinding keyAcceptRequest = new KeyBinding("Accept Request", Keyboard.KEY_Y, "Sol Client");
-	private KeyBinding keyDismissRequest = new KeyBinding("Dismiss Request", Keyboard.KEY_N, "Sol Client");
+	private KeyBinding keyAcceptRequest = new KeyBinding("Accept Request", Keyboard.KEY_Y, "Aura Client 2");
+	private KeyBinding keyDismissRequest = new KeyBinding("Dismiss Request", Keyboard.KEY_N, "Aura Client 2");
 
 	private Deque<Popup> popups = new ArrayDeque<>();
 	private Popup currentPopup;
