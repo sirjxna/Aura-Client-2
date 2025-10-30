@@ -91,7 +91,7 @@ import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.ResourceLocation;
 
 /**
- * Main class for Sol Client.
+ * Main class for Aura Client 2.
  */
 public class Client {
 
@@ -119,7 +119,11 @@ public class Client {
 	private ChatChannelSystem chatChannelSystem;
 
 	public static final String VERSION = System.getProperty("me.mcblueparrot.client.version", "DEVELOPMENT TEST");
-	public static final String NAME = "Sol Client " + VERSION;
+	public static final String NAME = "Aura Client 2 " + VERSION;
+
+	static {
+		System.setProperty("http.agent", "Aura Client 2/" + VERSION);
+	}
 
 	@Getter
 	private PopupManager popupManager;
@@ -129,8 +133,6 @@ public class Client {
 	public void init() {
 		Utils.resetLineWidth();
 		new File(mc.mcDataDir, "server-resource-packs").mkdirs(); // Fix crash
-
-		System.setProperty("http.agent", "Sol Client/" + VERSION);
 
 		LOGGER.info("Initialising...");
 		bus.register(this);

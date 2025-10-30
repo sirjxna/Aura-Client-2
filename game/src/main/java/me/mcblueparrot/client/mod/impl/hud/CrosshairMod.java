@@ -21,7 +21,7 @@ import net.minecraft.world.WorldSettings.GameType;
 public class CrosshairMod extends HudMod {
 
 	private static final ResourceLocation CLIENT_CROSSHAIRS = new ResourceLocation("textures/gui" +
-			"/sol_client_crosshairs.png");
+			"/aura_client_crosshairs.png");
 
 	@Expose
 	@ConfigOption("Style")

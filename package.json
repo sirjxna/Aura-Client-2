@@ -42,7 +42,7 @@
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "sol_client_launcher",
+            "name": "aura_client_launcher",
             "loadingGif": "assets/installing.gif"
           }
         },
