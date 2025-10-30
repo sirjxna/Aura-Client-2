@@ -12,7 +12,7 @@ Repo: https://github.com/sirjxna/Aura-Client-2
 Go to [releases](https://github.com/sirjxna/Aura-Client-2/releases) and grab the latest version for your OS. If you see a security warning, it’s due to missing code‑signing; the code is open source.
 
 ## License
-Aura Client 2 is GPLv3. This is a rebrand/fork of Sol Client and retains GPL and required attribution.
+Aura Client 2 is GPLv3. 
 
 - Upstream project: https://github.com/qewer33/Sol-Client
 - Changes: name, branding, configuration and further adjustments.
