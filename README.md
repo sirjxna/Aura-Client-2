@@ -4,93 +4,93 @@
 <img src="https://img.shields.io/static/v1?label=license&message=GPLv3&color=blue&style=for-the-badge"/>&nbsp;
 <img src="https://img.shields.io/static/v1?label=Contributions&message=Welcome&color=brightgreen&style=for-the-badge"/>&nbsp;
 
-Aura Client 2 er en rebrandet og videreført versjon av Sol Client for Minecraft 1.8.9, distribuert under GPLv3. Prosjektet tar sikte på en enkel, åpen og brukervennlig PvP-klient med QoL-moduler.
+Aura Client 2 is a rebranded and continued version of the open‑source Sol Client for Minecraft 1.8.9, distributed under GPLv3. The goal is a simple, open, PvP‑friendly client with quality‑of‑life modules.
 
 Repo: https://github.com/sirjxna/Aura-Client-2
 
-## Last ned
-Gå til [releases](https://github.com/sirjxna/Aura-Client-2/releases) og last ned siste versjon for ditt OS. Dersom du får en sikkerhetsadvarsel skyldes det manglende signering – kildekoden er åpen.
+## Download
+Go to [releases](https://github.com/sirjxna/Aura-Client-2/releases) and grab the latest version for your OS. If you see a security warning, it’s due to missing code‑signing; the code is open source.
 
-## Lisens
-Aura Client 2 er GPLv3. Dette er en rebrand/fork av Sol Client og beholder GPL og nødvendig attribution.
+## License
+Aura Client 2 is GPLv3. This is a rebrand/fork of Sol Client and retains GPL and required attribution.
 
-- Opprinnelig prosjekt: https://github.com/qewer33/Sol-Client
-- Endringer: Navn, logo/branding, konfigurasjon og videre tilpasninger.
+- Upstream project: https://github.com/qewer33/Sol-Client
+- Changes: name, branding, configuration and further adjustments.
 
-## Hvorfor?
-Mange klienter er lukket kildekode. Aura Client 2 er åpen, slik at alle kan se hva den gjør, rapportere problemer og bidra.
+## Why?
+Many clients are closed source. Aura Client 2 is open so anyone can inspect behavior, report issues and contribute.
 
-## Funksjoner
-- Ren HUD inspirert av moderne PvP-klienter
-- Replay Mod-støtte (krever egen FFmpeg-installasjon)
-- Freelook (deaktiveres automatisk på Hypixel)
+## Features
+- Clean HUD inspired by modern PvP clients
+- Replay Mod support (requires your own FFmpeg installation)
+- Freelook (auto‑disabled on Hypixel)
 - Toggle sprint
 - Smooth zoom
 - Motion blur
-- 1.7-animasjoner
+- 1.7 animations
 - Item physics
-- Hypixel-tillegg
-- OptiFine (lastes ned fra offisiell side)
-- Crosshair-mod med tilpasninger
-- Quick Play-mod (hurtig meny for spill)
-- Tilpassbare launcher-servere
-- Bedre item-tooltips
-- Symbolplukker
-- Chat-kanalvisning
-- Popup-hendelser
-- Tilpassbar font og fargetema
-- Av/på inventory-logo
+- Hypixel additions
+- OptiFine (downloaded from the official site)
+- Crosshair mod with customization
+- Quick Play mod (fast game menu)
+- Customizable launcher servers
+- Better item tooltips
+- Symbol picker
+- Chat channel display
+- Pop‑up events
+- Customizable font and color scheme
+- Toggle inventory logo
 - Speedometer
 - Chunk animator
-- Bedwars-timere
-- Resource pack-mapper
+- Bedwars timers
+- Resource pack folders
 
-Foreslå funksjoner via Issues på GitHub-repoet.
+Suggest features via GitHub Issues.
 
-## Sikkerhet
-Klienten er åpen kildekode. Moduler som er i konflikt med enkelte servere kan deaktiveres – bruk skjønn og følg serverregler.
+## Safety
+The client is open source. Modules that conflict with some servers can be disabled—use discretion and follow server rules.
 
-## Kreditering
-- Sol Client (opprinnelig basis og inspirasjon) – GPLv3
+## Credits
+- Sol Client (base and inspiration) – GPLv3
 - OptiFine – sp614x
-- Hyperium – inspirasjon til rendering/launching
-- ReplayMod – Johni0702, CrushedPixel (modifisert versjon i klienten)
-- EntityCulling – tr7zw (modifisert)
+- Hyperium – inspiration for rendering/launching
+- ReplayMod – Johni0702, CrushedPixel (modified version)
+- EntityCulling – tr7zw (modified)
 - 1.7 Animations – OrangeMarshall
 - QuickPlay servers – robere2
 - Chunk Animator – lumien231
 
 ## IDE
 ### Eclipse
-1. Importer som Gradle-prosjekt.
-2. Velg game-mappen i repoet.
+1. Import as Gradle project.
+2. Choose the game directory in the repo.
 
 ### IntelliJ IDEA
 1. File > Open
-2. Velg game-mappen i repoet.
+2. Choose the game directory in the repo.
 
-## Byggeinstruksjoner
-Sørg for Java JDK 8.
+## Build Instructions
+Ensure Java JDK 8.
 
 ### Launcher
-Krever Node.js og npm.
+Requires Node.js and npm.
 
-Installer avhengigheter:
+Install deps:
 `sh
 npm i
 `
-Start launcher (dev):
+Start (dev):
 `sh
 npm run start
 `
-Bygg installer:
+Build installer:
 `sh
 npm run make
 `
-Installer ligger i out.
+The installer is output to out.
 
 ### Game
-Gå til spillmodulen:
+Move to the game module:
 `sh
 cd game
 `
@@ -102,4 +102,4 @@ Build:
 `sh
 ./gradlew build
 `
-Resultat: uild/libs/game.jar.
+Result: uild/libs/game.jar.
