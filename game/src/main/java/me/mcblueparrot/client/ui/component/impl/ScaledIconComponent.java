@@ -50,7 +50,7 @@ public class ScaledIconComponent extends ColouredComponent {
 			Utils.glColour(getColour());
 
 			mc.getTextureManager().bindTexture(new ResourceLocation(
-					"textures/gui/" + iconName.get(this, "sol_client_confusion") + "_" + Utils.getTextureScale() + ".png"));
+					"textures/gui/" + iconName.get(this, "aura_client_confusion") + "_" + Utils.getTextureScale() + ".png"));
 			Gui.drawModalRectWithCustomSizedTexture(0, 0, 0, 0, width, height, width, height);
 		}
 
@@ -63,3 +63,4 @@ public class ScaledIconComponent extends ColouredComponent {
 	}
 
 }
+

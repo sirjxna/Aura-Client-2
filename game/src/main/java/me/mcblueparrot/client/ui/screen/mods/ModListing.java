@@ -44,12 +44,12 @@ public class ModListing extends ColouredComponent {
 		this.mod = mod;
 		this.screen = screen;
 
-		add(new ScaledIconComponent("sol_client_" + mod.getId(), 16, 16),
+		add(new ScaledIconComponent("aura_client_" + mod.getId(), 16, 16),
 				new AlignedBoundsController(Alignment.CENTRE, Alignment.CENTRE,
 						(component, defaultBounds) -> new Rectangle(defaultBounds.getY(), defaultBounds.getY(),
 								defaultBounds.getWidth(), defaultBounds.getHeight())));
 
-		add(settingsButton = new ScaledIconComponent((component, defaultIcon) -> mod.isBlocked() ? "sol_client_lock" : "sol_client_settings", 16, 16,
+		add(settingsButton = new ScaledIconComponent((component, defaultIcon) -> mod.isBlocked() ? "aura_client_lock" : "aura_client_settings", 16, 16,
 				new AnimatedColourController((component, defaultColour) -> isHovered()
 						? (component.isHovered() || mod.isLocked() || mod.isBlocked() ? Colour.LIGHT_BUTTON_HOVER : Colour.LIGHT_BUTTON)
 						: Colour.TRANSPARENT)),
@@ -73,12 +73,12 @@ public class ModListing extends ColouredComponent {
 
 		if(SolClientMod.instance.roundedUI) {
 			Utils.glColour(Colour.BLACK_128);
-			mc.getTextureManager().bindTexture(new ResourceLocation("textures/gui/sol_client_mod_listing_" + Utils.getTextureScale() + ".png"));
+			mc.getTextureManager().bindTexture(new ResourceLocation("textures\/gui\/aura_client_mod_listing_" + Utils.getTextureScale() + ".png"));
 			Gui.drawModalRectWithCustomSizedTexture(0, 0, 0, 0, 300, 30, 300, 30);
 
 			Utils.glColour(getColour());
 
-			mc.getTextureManager().bindTexture(new ResourceLocation("textures/gui/sol_client_mod_listing_outline_" + Utils.getTextureScale() + ".png"));
+			mc.getTextureManager().bindTexture(new ResourceLocation("textures\/gui\/aura_client_mod_listing_outline_" + Utils.getTextureScale() + ".png"));
 			Gui.drawModalRectWithCustomSizedTexture(0, 0, 0, 0, 300, 30, 300, 30);
 		}
 		else {
@@ -128,3 +128,4 @@ public class ModListing extends ColouredComponent {
 	}
 
 }
+

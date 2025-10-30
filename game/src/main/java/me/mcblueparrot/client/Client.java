@@ -105,7 +105,7 @@ public class Client {
 	private List<HudElement> huds = new ArrayList<HudElement>();
 	private static final Logger LOGGER = LogManager.getLogger();
 
-	private final File DATA_FILE = new File(Minecraft.getMinecraft().mcDataDir, "sol_client_mods.json");
+	private final File DATA_FILE = new File(Minecraft.getMinecraft().mcDataDir, "aura_client_mods.json");
 	private final File LEGACY_DATA_FILE = new File(Minecraft.getMinecraft().mcDataDir, "parrot_client_mods.json" /* This was the old name. */ );
 
 	public DetectedServer detectedServer;
@@ -484,3 +484,4 @@ public class Client {
 	}
 
 }
+

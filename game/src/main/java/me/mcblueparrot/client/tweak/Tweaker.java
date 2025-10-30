@@ -46,7 +46,7 @@ public class Tweaker implements ITweaker {
 
 		MixinBootstrap.init();
 
-		Mixins.addConfiguration("mixins.solclient.json");
+		Mixins.addConfiguration("mixins.auraclient.json");
 
 		// Replay Mod
 		Mixins.addConfiguration("mixins.core.replaymod.json");
@@ -77,3 +77,4 @@ public class Tweaker implements ITweaker {
 	}
 
 }
+

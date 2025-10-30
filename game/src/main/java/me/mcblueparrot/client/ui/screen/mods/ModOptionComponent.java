@@ -35,7 +35,7 @@ public class ModOptionComponent extends ScaledIconComponent {
 	private int enumWidth;
 
 	public ModOptionComponent(CachedConfigOption option) {
-		super("sol_client_mod_option", 300, 21, (component, defaultColour) -> Colour.BLACK_128);
+		super("aura_client_mod_option", 300, 21, (component, defaultColour) -> Colour.BLACK_128);
 
 		this.option = option;
 
@@ -152,11 +152,11 @@ public class ModOptionComponent extends ScaledIconComponent {
 
 				Component previous;
 
-				add(new ScaledIconComponent("sol_client_next", 8, 8, new AnimatedColourController((component,
+				add(new ScaledIconComponent("aura_client_next", 8, 8, new AnimatedColourController((component,
 						defaultColour) -> component.isHovered() ? Colour.LIGHT_BUTTON_HOVER : Colour.LIGHT_BUTTON)),
 						defaultBoundController);
 
-				add(previous = new ScaledIconComponent("sol_client_previous", 8, 8, new AnimatedColourController((component,
+				add(previous = new ScaledIconComponent("aura_client_previous", 8, 8, new AnimatedColourController((component,
 						defaultColour) -> component.isHovered() ? Colour.LIGHT_BUTTON_HOVER : Colour.LIGHT_BUTTON)),
 						(component, defaultBounds) -> {
 							Rectangle defaultComponentBounds = defaultBoundController.get(component, defaultBounds);
@@ -269,3 +269,4 @@ public class ModOptionComponent extends ScaledIconComponent {
 	}
 
 }
+

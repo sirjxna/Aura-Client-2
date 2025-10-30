@@ -103,7 +103,7 @@ public class ModsScreen extends Screen {
 											}
 
 											return false;
-										}).withIcon("sol_client_hud"),
+										}).withIcon("aura_client_hud"),
 						new AlignedBoundsController(Alignment.CENTRE, Alignment.END,
 								(component, defaultBounds) -> new Rectangle(defaultBounds.getX() + 51,
 								getBounds().getHeight() - defaultBounds.getHeight() - 10, 100, 20)));
@@ -116,7 +116,7 @@ public class ModsScreen extends Screen {
 				scroll.load();
 				return true;
 			}).placeholder("Search");
-			searchIcon = new ScaledIconComponent("sol_client_search", 16, 16);
+			searchIcon = new ScaledIconComponent("aura_client_search", 16, 16);
 
 			switchMod(startingMod, true);
 		}
@@ -187,3 +187,4 @@ public class ModsScreen extends Screen {
 	}
 
 }
+

@@ -62,16 +62,16 @@ public class SolClientMainMenu extends Screen {
 		font.renderString("Copyright TheKodeToad and contributors.", 10, height - 15, -1);
 		font.renderString(Client.NAME, 10, height - 25, -1);
 
-		mc.getTextureManager().bindTexture(new ResourceLocation("textures/gui/sol_client_logo_with_text_" +
+		mc.getTextureManager().bindTexture(new ResourceLocation("textures\/gui\/aura_client_logo_with_text_" +
 						Utils.getTextureScale() + ".png"));
 		Gui.drawModalRectWithCustomSizedTexture(width / 2 - 64, 50, 0, 0, 128, 32, 128, 32);
 //
 //		Button singleplayerButton = new Button(SolClientMod.getFont(), "Singleplayer",
 //				new Rectangle(width / 2 - 100, height / 4 + 48, 200, 20), SolClientMod.instance.uiColour, SolClientMod.instance.uiHover)
-//				.withIcon("textures/gui/sol_client_player");
+//				.withIcon("textures\/gui\/aura_client_player");
 //		Button multiplayerButton = new Button(SolClientMod.getFont(), "Multiplayer",
 //				new Rectangle(width / 2 - 100, height / 4 + 48 + 25, 200, 20), SolClientMod.instance.uiColour, SolClientMod.instance.uiHover)
-//				.withIcon("textures/gui/sol_client_players");
+//				.withIcon("textures\/gui\/aura_client_players");
 //
 //		if(singleplayerButton.contains(mouseX, mouseY) && mouseDown && !wasMouseDown) {
 //			Utils.playClickSound(true);
@@ -96,20 +96,20 @@ public class SolClientMainMenu extends Screen {
 //
 //		Button languageButton = new Button(SolClientMod.getFont(), "",
 //				new Rectangle(buttonsX, height / 4 + 48 + 70, 20, 20), SolClientMod.instance.uiColour,
-//				SolClientMod.instance.uiHover).withIcon("textures/gui/sol_client_language");
+//				SolClientMod.instance.uiHover).withIcon("textures\/gui\/aura_client_language");
 //		Button optionsButton = new Button(SolClientMod.getFont(), "",
 //				new Rectangle(buttonsX += 26, height / 4 + 48 + 70, 20, 20), SolClientMod.instance.uiColour,
-//				SolClientMod.instance.uiHover).withIcon("textures/gui/sol_client_settings_small");
+//				SolClientMod.instance.uiHover).withIcon("textures\/gui\/aura_client_settings_small");
 //		Button modsButton = new Button(SolClientMod.getFont(), "",
 //				new Rectangle(buttonsX += 26, height / 4 + 48 + 70, 20, 20), SolClientMod.instance.uiColour,
-//				SolClientMod.instance.uiHover).withIcon("textures/gui/sol_client_mods");
+//				SolClientMod.instance.uiHover).withIcon("textures\/gui\/aura_client_mods");
 //
 //		Button replayButton = null;
 //
 //		if(replay) {
 //			replayButton = new Button(SolClientMod.getFont(), "",
 //					new Rectangle(buttonsX += 26, height / 4 + 48 + 70, 20, 20), SolClientMod.instance.uiColour,
-//					SolClientMod.instance.uiHover).withIcon("textures/gui/sol_client_replay_button");
+//					SolClientMod.instance.uiHover).withIcon("textures\/gui\/aura_client_replay_button");
 //		}
 //
 //		if(mouseDown && !wasMouseDown) {
@@ -196,7 +196,7 @@ public class SolClientMainMenu extends Screen {
 							: SolClientMod.instance.uiColour;
 
 			add(new ButtonComponent((component, defaultText) -> "Singleplayer",
-					new AnimatedColourController(defaultColourController)).withIcon("sol_client_player")
+					new AnimatedColourController(defaultColourController)).withIcon("aura_client_player")
 							.type(ButtonType.LARGE).onClick((info, button) -> {
 								if (button == 0) {
 									Utils.playClickSound(true);
@@ -210,7 +210,7 @@ public class SolClientMainMenu extends Screen {
 							defaultBounds.getWidth(), defaultBounds.getHeight()));
 
 			add(new ButtonComponent((component, defaultText) -> "Multiplayer", new AnimatedColourController(defaultColourController))
-					.withIcon("sol_client_players").type(ButtonType.LARGE).onClick((info, button) -> {
+					.withIcon("aura_client_players").type(ButtonType.LARGE).onClick((info, button) -> {
 										if(button == 0) {
 											Utils.playClickSound(true);
 											mc.displayGuiScreen(new GuiMultiplayer(screen));
@@ -223,7 +223,7 @@ public class SolClientMainMenu extends Screen {
 							defaultBounds.getWidth(), defaultBounds.getHeight()));
 
 			add(new ButtonComponent((component, defaultText) -> "",
-					new AnimatedColourController(defaultColourController)).withIcon("sol_client_language").type(ButtonType.SMALL)
+					new AnimatedColourController(defaultColourController)).withIcon("aura_client_language").type(ButtonType.SMALL)
 									.onClick((info, button) -> {
 										if(button == 0) {
 											Utils.playClickSound(true);
@@ -247,7 +247,7 @@ public class SolClientMainMenu extends Screen {
 					});
 
 			add(new ButtonComponent((component, defaultText) -> "",
-					new AnimatedColourController(defaultColourController)).withIcon("sol_client_settings_small").type(ButtonType.SMALL)
+					new AnimatedColourController(defaultColourController)).withIcon("aura_client_settings_small").type(ButtonType.SMALL)
 									.onClick((info, button) -> {
 										if(button == 0) {
 											Utils.playClickSound(true);
@@ -261,7 +261,7 @@ public class SolClientMainMenu extends Screen {
 								defaultBounds.getHeight()));
 
 			add(new ButtonComponent((component, defaultText) -> "",
-					new AnimatedColourController(defaultColourController)).withIcon("sol_client_mods").type(ButtonType.SMALL)
+					new AnimatedColourController(defaultColourController)).withIcon("aura_client_mods").type(ButtonType.SMALL)
 									.onClick((info, button) -> {
 										if(button == 0) {
 											Utils.playClickSound(true);
@@ -275,7 +275,7 @@ public class SolClientMainMenu extends Screen {
 								defaultBounds.getHeight()));
 
 			add(new ButtonComponent((component, defaultText) -> "",
-					new AnimatedColourController(defaultColourController)).withIcon("sol_client_replay_button")
+					new AnimatedColourController(defaultColourController)).withIcon("aura_client_replay_button")
 							.type(ButtonType.SMALL).onClick((info, button) -> {
 								if (button == 0) {
 									Utils.playClickSound(true);
@@ -292,3 +292,4 @@ public class SolClientMainMenu extends Screen {
 	}
 
 }
+

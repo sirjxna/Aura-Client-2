@@ -12,13 +12,13 @@ public class ColourBoxComponent extends ScaledIconComponent {
 	private Component hoverController;
 
 	public ColourBoxComponent(Controller<Colour> colourController, Component hoverController) {
-		super("sol_client_colour_fill", 16, 16,
+		super("aura_client_colour_fill", 16, 16,
 				new AnimatedColourController(
 						(component, defaultColour) -> colourController.get(component, defaultColour)));
 
 		this.hoverController = hoverController;
 
-		add(new ScaledIconComponent("sol_client_colour_circle", 16, 16, new AnimatedColourController(
+		add(new ScaledIconComponent("aura_client_colour_circle", 16, 16, new AnimatedColourController(
 				(component, defaultColour) -> isHovered() ? Colour.LIGHT_BUTTON_HOVER : Colour.LIGHT_BUTTON)) {
 
 			@Override
@@ -50,3 +50,4 @@ public class ColourBoxComponent extends ScaledIconComponent {
 	}
 
 }
+

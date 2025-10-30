@@ -42,7 +42,7 @@ public class ButtonComponent extends ColouredComponent {
 			Utils.glColour(getColour());
 
 			mc.getTextureManager().bindTexture(
-					new ResourceLocation("textures/gui/sol_client_button_" + type + "_" + Utils.getTextureScale() + ".png"));
+					new ResourceLocation("textures\/gui\/aura_client_button_" + type + "_" + Utils.getTextureScale() + ".png"));
 			Gui.drawModalRectWithCustomSizedTexture(0, 0, 0, 0, type.getWidth(), 20, type.getWidth(), 20);
 		}
 		else {
@@ -89,7 +89,8 @@ public class ButtonComponent extends ColouredComponent {
 								return true;
 							}
 							return false;
-						}).withIcon("sol_client_tick");
+						}).withIcon("aura_client_tick");
 	}
 
 }
+

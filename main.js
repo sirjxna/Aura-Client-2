@@ -100,7 +100,7 @@ If you have private messages, try reproducing this issue again.`,
 [Game Log on Hastebin](${hasteUrl})`
 		}
 
-		var running = `Running Sol Client v${Utils.version}`;
+		var running = `Running aura client v${Utils.version}`;
 
 		if(optifine) {
 			running += " with " + optifine;
@@ -151,3 +151,4 @@ ${crashReportText}
 }
 
 run();
+

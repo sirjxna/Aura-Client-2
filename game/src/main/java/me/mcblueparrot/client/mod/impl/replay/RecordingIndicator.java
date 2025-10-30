@@ -20,9 +20,9 @@ import net.minecraft.util.ResourceLocation;
 public class RecordingIndicator extends BaseHudElement {
 
 	private static final ResourceLocation RECORDING = new ResourceLocation(
-			"textures/gui/sol_client_recording.png");
+			"textures\/gui\/aura_client_recording.png");
 	private static final ResourceLocation PAUSED = new ResourceLocation(
-			"textures/gui/sol_client_paused.png");
+			"textures\/gui\/aura_client_paused.png");
 	public static GuiRecordingControls guiControls;
 	private SCReplayMod mod;
 
@@ -91,3 +91,4 @@ public class RecordingIndicator extends BaseHudElement {
 	}
 
 }
+

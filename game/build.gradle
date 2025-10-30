@@ -286,7 +286,7 @@ task cleanRefmap() {
 		for(ZipEntry entry : Collections.list(zip.entries())) {
 			InputStream entryInput = zip.getInputStream(entry)
 
-			if(entry.getName() == "mixins.solclient.refmap.json") {
+			if(entry.getName() == "mixins.auraclient.refmap.json") {
 				def obj = new JsonParser().parse(new InputStreamReader(entryInput)).getAsJsonObject()
 				obj.remove("data")
 
@@ -367,7 +367,7 @@ dependencies {
 }
 
 mixin {
-	add sourceSets.main, "mixins.solclient.refmap.json"
+	add sourceSets.main, "mixins.auraclient.refmap.json"
 }
 
 runClient {
@@ -380,7 +380,7 @@ jar {
 	dependsOn configurations.compile
 	manifest {
 		attributes(
-				"MixinConfigs": "mixins.solclient.json",
+				"MixinConfigs": "mixins.auraclient.json",
 				"TweakClass": launchWrapperTweakClass,
 				"TweakOrder": "0",
 				"Manifest-Version": "1.0"
@@ -396,3 +396,4 @@ jar {
 tasks.withType(JavaCompile) {
 	options.encoding = "UTF-8"
 }
+

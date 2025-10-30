@@ -31,7 +31,7 @@ public class ColourPickerDialog extends ScaledIconComponent {
 	private ButtonComponent done;
 
 	public ColourPickerDialog(CachedConfigOption colourOption, Colour colour, Consumer<Colour> callback) {
-		super("sol_client_colour_dialog", 300, 150, (component, defaultColour) -> new Colour(40, 40, 40));
+		super("aura_client_colour_dialog", 300, 150, (component, defaultColour) -> new Colour(40, 40, 40));
 		add(new LabelComponent(colourOption.name),
 				new AlignedBoundsController(Alignment.CENTRE, Alignment.START,
 						(component, defaultBounds) -> new Rectangle(defaultBounds.getX(), defaultBounds.getY() + 9,
@@ -48,7 +48,7 @@ public class ColourPickerDialog extends ScaledIconComponent {
 			add(new ButtonComponent("Apply to All",
 					new AnimatedColourController(
 							(component, defaultColour) -> component.isHovered() ? Colour.BLUE_HOVER : Colour.BLUE))
-									.withIcon("sol_client_new")
+									.withIcon("aura_client_new")
 									.onClick((info, button) -> {
 										if(button == 0) {
 											hex.flush();
@@ -199,3 +199,4 @@ public class ColourPickerDialog extends ScaledIconComponent {
 	}
 
 }
+
