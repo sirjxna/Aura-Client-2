@@ -59,7 +59,6 @@ public class SolClientMainMenu extends Screen {
 		String versionString = "Minecraft 1.8.9";
 		font.renderString(versionString, (int) (width - font.getWidth(versionString) - 10), height - 25, -1);
 
-		font.renderString("Copyright TheKodeToad and contributors.", 10, height - 15, -1);
 		font.renderString(Client.NAME, 10, height - 25, -1);
 
 		mc.getTextureManager().bindTexture(new ResourceLocation("textures/gui/aura_client_logo_with_text_" +

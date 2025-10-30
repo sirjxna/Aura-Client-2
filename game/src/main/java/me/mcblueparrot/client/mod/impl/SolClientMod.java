@@ -35,7 +35,7 @@ public class SolClientMod extends ConfigOnlyMod {
 
 	@Expose
 	@ConfigOption("UI Colour")
-	public Colour uiColour = new Colour(86, 98, 246); // Aura blue-purple
+	public Colour uiColour = new Colour(153, 51, 255); // Aura purple (matches logo)
 	public Colour uiHover;
 
 	@Expose

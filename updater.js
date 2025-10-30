@@ -9,7 +9,7 @@ class Updater {
 		return new Promise(async(resolve) => {
 			console.log("Checking for update...");
 
-			var latestRelease = (await axios.get("https://api.github.com/repos/TheKodeToad/Sol-Client/releases/latest")).data;
+			var latestRelease = (await axios.get("https://api.github.com/repos/sirjxna/Aura-Client-2/releases/latest")).data;
 
 			if(latestRelease.name != require("./package.json").version) {
 				console.log("Installing update...");
