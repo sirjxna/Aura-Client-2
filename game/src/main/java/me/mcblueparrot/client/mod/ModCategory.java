@@ -7,7 +7,7 @@ import me.mcblueparrot.client.Client;
 import net.minecraft.util.EnumChatFormatting;
 
 /**
- * Categories of Sol Client mods.
+ * Categories of Aura Client 2 mods.
  */
 public enum ModCategory {
 	/**
@@ -65,3 +65,4 @@ public enum ModCategory {
 	}
 
 }
+

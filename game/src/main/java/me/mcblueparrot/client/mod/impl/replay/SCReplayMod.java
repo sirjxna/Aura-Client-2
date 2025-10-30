@@ -26,7 +26,7 @@ import me.mcblueparrot.client.util.data.Colour;
 import net.minecraft.client.multiplayer.WorldClient;
 
 /**
- * Sol Client representation of Replay Mod.
+ * Aura Client 2 representation of Replay Mod.
  * This allows it to appear in the mod list.
  *
  * Originally by CrushedPixel and johni0702.
@@ -209,3 +209,4 @@ public class SCReplayMod extends Mod {
 	}
 
 }
+
