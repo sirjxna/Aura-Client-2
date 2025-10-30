@@ -1,5 +1,5 @@
 {
-  "name": "Sol Client",
+  "name": "Aura Client 2",
   "version": "1.7.5",
   "description": "Simple and easy to use Minecraft client.",
   "main": "main.js",
@@ -55,7 +55,7 @@
                 "Game"
               ],
               "section": "games",
-              "productName": "Sol Client",
+              "productName": "Aura Client 2",
               "maintainer": "mcblueparrot"
             }
           }

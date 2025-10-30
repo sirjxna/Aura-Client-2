@@ -58,8 +58,8 @@ public class SolClientMod extends ConfigOnlyMod {
 	@ConfigOption("Fancy Font")
 	public boolean fancyFont = true;
 
-	public SolClientMod() {
-		super("Sol Client", "sol_client", "Settings for Sol Client.", ModCategory.NONE);
+    public SolClientMod() {
+        super("Aura Client 2", "auraclient", "Settings for Aura Client 2.", ModCategory.NONE);
 		instance = this;
 		Client.INSTANCE.registerKeyBinding(modsKey);
 		Client.INSTANCE.registerKeyBinding(editHudKey);
