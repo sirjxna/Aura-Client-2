@@ -60,12 +60,12 @@ public class SliderComponent extends Component {
 		if(SolClientMod.instance.roundedUI) {
 			Utils.glColour(Colour.LIGHT_BUTTON);
 			mc.getTextureManager().bindTexture(new ResourceLocation(
-					"textures\/gui\/aura_client_slider_" + Utils.getTextureScale() + ".png"));
+					"textures/gui/aura_client_slider_" + Utils.getTextureScale() + ".png"));
 			Gui.drawModalRectWithCustomSizedTexture(0, 4, 0, 0, 100, 2, 100, 2);
 
 			Utils.glColour(colour.get(this, null));
 			mc.getTextureManager().bindTexture(new ResourceLocation(
-					"textures\/gui\/aura_client_slider_thumb_" + Utils.getTextureScale() + ".png"));
+					"textures/gui/aura_client_slider_thumb_" + Utils.getTextureScale() + ".png"));
 			Gui.drawModalRectWithCustomSizedTexture(x, 1, 0, 0, 8, 8, 8, 8);
 		}
 		else {
@@ -108,4 +108,5 @@ public class SliderComponent extends Component {
 	}
 
 }
+
 

@@ -35,7 +35,7 @@ public class SolClientMod extends ConfigOnlyMod {
 
 	@Expose
 	@ConfigOption("UI Colour")
-	public Colour uiColour = new Colour(255, 180, 0);
+	public Colour uiColour = new Colour(86, 98, 246); // Aura blue-purple
 	public Colour uiHover;
 
 	@Expose
@@ -100,7 +100,7 @@ public class SolClientMod extends ConfigOnlyMod {
 	}
 
 	private Colour getUiHover() {
-		return uiColour.add(40);
+		return uiColour.add(24); // slightly lighter for hover
 	}
 
 }

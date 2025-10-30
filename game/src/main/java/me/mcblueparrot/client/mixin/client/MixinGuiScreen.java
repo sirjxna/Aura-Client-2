@@ -74,7 +74,7 @@ public abstract class MixinGuiScreen implements AccessGuiScreen {
 		if(SolClientMod.instance.logoInInventory && (Object) this instanceof GuiContainer) {
 			GlStateManager.enableBlend();
 
-			mc.getTextureManager().bindTexture(new ResourceLocation("textures\/gui\/aura_client_logo_with_text_" +
+			mc.getTextureManager().bindTexture(new ResourceLocation("textures/gui/aura_client_logo_with_text_" +
 							Utils.getTextureScale() + ".png"));
 
 			Gui.drawModalRectWithCustomSizedTexture(width - 140, height - 40, 0, 0, 128, 32, 128, 32);
@@ -131,4 +131,5 @@ public abstract class MixinGuiScreen implements AccessGuiScreen {
 	protected Minecraft mc;
 
 }
+
 
