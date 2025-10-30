@@ -50,15 +50,6 @@ Suggest features via GitHub Issues.
 ## Safety
 The client is open source. Modules that conflict with some servers can be disabled—use discretion and follow server rules.
 
-## Credits
-- Sol Client (base and inspiration) – GPLv3
-- OptiFine – sp614x
-- Hyperium – inspiration for rendering/launching
-- ReplayMod – Johni0702, CrushedPixel (modified version)
-- EntityCulling – tr7zw (modified)
-- 1.7 Animations – OrangeMarshall
-- QuickPlay servers – robere2
-- Chunk Animator – lumien231
 
 ## IDE
 ### Eclipse
