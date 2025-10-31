@@ -220,7 +220,7 @@ public abstract class MixinMinecraft implements AccessMinecraft, MCVer.Minecraft
 	@Redirect(method = "createDisplay",
 			at = @At(value = "INVOKE", target = "Lorg/lwjgl/opengl/Display;setTitle(Ljava/lang/String;)V"))
 	public void overrideTitle(String oldTitle) {
-		Display.setTitle(Client.NAME + " on " + oldTitle);
+		Display.setTitle("Aura Client 2");
 	}
 
 	@Inject(method = "setServerData", at = @At("TAIL"))

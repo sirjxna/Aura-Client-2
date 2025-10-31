@@ -32,7 +32,7 @@ public class DiscordRPC {
 		Core.init(new File(System.getProperty("me.mcblueparrot.client.discord_lib")));
 
 		params = new CreateParams();
-		params.setClientID(925701938211868683L);
+		params.setClientID(1401538810906677378L);
 		params.setFlags(CreateParams.Flags.toLong(CreateParams.Flags.NO_REQUIRE_DISCORD));
 
 		core = new Core(params);
