@@ -94,8 +94,8 @@ public class ModsScreen extends Screen {
 			if(!singleModMode) {
 				add(new ButtonComponent("Edit HUD",
 						new AnimatedColourController(
-								(component, defaultColour) -> component.isHovered() ? new Colour(255, 165, 65)
-										: new Colour(255, 120, 20))).onClick((info, button) -> {
+								(component, defaultColour) -> component.isHovered() ? new Colour(170, 85, 255)
+										: new Colour(153, 51, 255))).onClick((info, button) -> {
 											if(button == 0) {
 												Utils.playClickSound(true);
 												mc.displayGuiScreen(new MoveHudsScreen());
