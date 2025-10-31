@@ -18,21 +18,6 @@ public class Tweaker implements ITweaker {
 
 	@Override
 	public void acceptOptions(List<String> args, File gameDir, File assetsDir, String profile) {
-		try {
-			// Check for OptiFine in either package structure
-			Class.forName("optifine.Patcher");
-			optiFine = true;
-		}
-		catch(ClassNotFoundException ignored) {
-			try {
-				// Check for OptiFine HD U package structure (net.optifine)
-				Class.forName("net.optifine.LightMap");
-				optiFine = true;
-			}
-			catch(ClassNotFoundException ignored2) {
-			}
-		}
-
 		Tweaker.args.addAll(args);
 		if(gameDir != null) {
 			Tweaker.args.add("--gameDir");
@@ -50,6 +35,23 @@ public class Tweaker implements ITweaker {
 
 	@Override
 	public void injectIntoClassLoader(LaunchClassLoader classLoader) {
+		// Check for OptiFine now that classloader is available
+		try {
+			// Check for OptiFine HD U package structure (net.optifine)
+			classLoader.findClass("net.optifine.LightMap");
+			optiFine = true;
+		}
+		catch(ClassNotFoundException ignored) {
+			try {
+				// Check for OptiFine in old package structure
+				classLoader.findClass("optifine.Patcher");
+				optiFine = true;
+			}
+			catch(ClassNotFoundException ignored2) {
+				optiFine = false;
+			}
+		}
+
 		classLoader.registerTransformer("me.mcblueparrot.client.tweak.transformer.ClassTransformer");
 
 		MixinBootstrap.init();
