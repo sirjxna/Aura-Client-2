@@ -15,7 +15,7 @@ public class MixinGameSettings {
 	private static boolean firstLoad = true;
 
 	@Inject(method = "<init>(Lnet/minecraft/client/Minecraft;Ljava/io/File;)V", at = @At("RETURN"))
-	public void initOptiFine(GameSettings settings, net.minecraft.client.Minecraft mc, java.io.File file, CallbackInfo ci) {
+	public void initOptiFine(net.minecraft.client.Minecraft mc, java.io.File file, CallbackInfo ci) {
 		// Initialize OptiFine Config when GameSettings is created
 		Config.initGameSettings((GameSettings)(Object)this);
 	}
