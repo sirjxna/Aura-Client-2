@@ -16,6 +16,7 @@
 		"client.MixinFontRendererCompat",
 		"client.MixinGameSettings",
 		"client.MixinGuiChat",
+		"client.MixinPlayerControllerMP",
 		"client.MixinGuiContainer",
 		"client.MixinGuiIngame",
 		"client.MixinGuiIngameMenu",

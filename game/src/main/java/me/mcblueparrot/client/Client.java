@@ -43,6 +43,7 @@ import me.mcblueparrot.client.mod.impl.ChunkAnimatorMod;
 import me.mcblueparrot.client.mod.impl.ColourSaturationMod;
 import me.mcblueparrot.client.mod.impl.FreelookMod;
 import me.mcblueparrot.client.mod.impl.HitColourMod;
+import me.mcblueparrot.client.mod.impl.HitregOptimizerMod;
 import me.mcblueparrot.client.mod.impl.ItemPhysicsMod;
 import me.mcblueparrot.client.mod.impl.MenuBlurMod;
 import me.mcblueparrot.client.mod.impl.MotionBlurMod;
@@ -180,6 +181,7 @@ public class Client {
 		register(TimeChangerMod::new);
 		register(BlockSelectionMod::new);
 		register(HitColourMod::new);
+		register(HitregOptimizerMod::new);
 		register(SCReplayMod::new);
 		register(QuickPlayMod::new);
 		register(HypixelAdditionsMod::new);
