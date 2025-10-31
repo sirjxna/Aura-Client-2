@@ -7,11 +7,18 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import net.minecraft.client.settings.GameSettings;
+import net.minecraft.src.Config;
 
 @Mixin(GameSettings.class)
 public class MixinGameSettings {
 
 	private static boolean firstLoad = true;
+
+	@Inject(method = "<init>(Lnet/minecraft/client/Minecraft;Ljava/io/File;)V", at = @At("TAIL"))
+	public void initOptiFine(GameSettings settings, net.minecraft.client.Minecraft mc, java.io.File file, CallbackInfo ci) {
+		// Initialize OptiFine Config when GameSettings is created
+		Config.initGameSettings((GameSettings)(Object)this);
+	}
 
 	@Inject(method = "loadOptions", at = @At("HEAD"))
 	public void setDefaults(CallbackInfo callback) {
