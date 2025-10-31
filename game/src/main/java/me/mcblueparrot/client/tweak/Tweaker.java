@@ -40,15 +40,18 @@ public class Tweaker implements ITweaker {
 			// Check for OptiFine HD U package structure (net.optifine)
 			classLoader.findClass("net.optifine.LightMap");
 			optiFine = true;
+			System.out.println("[Aura Client 2] OptiFine detected via net.optifine package!");
 		}
 		catch(ClassNotFoundException ignored) {
 			try {
 				// Check for OptiFine in old package structure
 				classLoader.findClass("optifine.Patcher");
 				optiFine = true;
+				System.out.println("[Aura Client 2] OptiFine detected via optifine package!");
 			}
 			catch(ClassNotFoundException ignored2) {
 				optiFine = false;
+				System.out.println("[Aura Client 2] OptiFine not found - classes may not be loaded yet.");
 			}
 		}
 
