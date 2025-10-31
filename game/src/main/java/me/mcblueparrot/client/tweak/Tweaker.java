@@ -19,10 +19,18 @@ public class Tweaker implements ITweaker {
 	@Override
 	public void acceptOptions(List<String> args, File gameDir, File assetsDir, String profile) {
 		try {
+			// Check for OptiFine in either package structure
 			Class.forName("optifine.Patcher");
 			optiFine = true;
 		}
 		catch(ClassNotFoundException ignored) {
+			try {
+				// Check for OptiFine HD U package structure (net.optifine)
+				Class.forName("net.optifine.LightMap");
+				optiFine = true;
+			}
+			catch(ClassNotFoundException ignored2) {
+			}
 		}
 
 		Tweaker.args.addAll(args);
