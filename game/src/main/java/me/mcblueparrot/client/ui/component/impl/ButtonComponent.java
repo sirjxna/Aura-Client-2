@@ -80,7 +80,7 @@ public class ButtonComponent extends ColouredComponent {
 
 	public static ButtonComponent done(Runnable onClick) {
 		return new ButtonComponent("Done", new AnimatedColourController(
-				(component, defaultColour) -> component.isHovered() ? new Colour(20, 120, 20) : new Colour(0, 100, 0)))
+				(component, defaultColour) -> component.isHovered() ? new Colour(170, 85, 255) : new Colour(153, 51, 255)))
 						.onClick((info, button) -> {
 							if (button == 0) {
 								Utils.playClickSound(true);
