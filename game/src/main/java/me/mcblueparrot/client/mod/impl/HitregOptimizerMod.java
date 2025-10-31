@@ -14,7 +14,7 @@ public class HitregOptimizerMod extends Mod {
 
 	@Expose
 	@ConfigOption("Reach Distance")
-	@Slider(min = 3.05F, max = 3.15F, step = 0.1F, suffix = " ")
+	@Slider(min = 3.05F, max = 3.15F, step = 0.01F, suffix = " ")
 	public float reachDistance = 3.10F;
 
 	public HitregOptimizerMod() {
