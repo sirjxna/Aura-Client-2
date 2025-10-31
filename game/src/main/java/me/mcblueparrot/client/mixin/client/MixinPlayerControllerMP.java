@@ -14,7 +14,7 @@ public class MixinPlayerControllerMP {
 	@Inject(method = "getBlockReachDistance()F", at = @At("RETURN"), cancellable = true)
 	public void modifyReachDistance(CallbackInfoReturnable<Float> cir) {
 		if(HitregOptimizerMod.enabled && HitregOptimizerMod.instance != null) {
-			cir.setReturnValue(HitregOptimizerMod.instance.reachDistance);
+			cir.setReturnValue(HitregOptimizerMod.instance.getReachDistance());
 		}
 	}
 

@@ -18,7 +18,7 @@ public class HitregOptimizerMod extends Mod {
 	public float reachDistance = 3.10F;
 
 	public HitregOptimizerMod() {
-		super("Hitreg Optimizer", "hitreg_optimizer", "Increases your reach/attack range for better hit registration.", ModCategory.UTILITY);
+		super("Hitreg Optimizer", "hitreg_optimizer", "improves for better hit registration.", ModCategory.UTILITY);
 		instance = this;
 	}
 
