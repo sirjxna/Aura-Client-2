@@ -14,8 +14,8 @@ public class HitregOptimizerMod extends Mod {
 
 	@Expose
 	@ConfigOption("Reach Distance")
-	@Slider(min = 3.0F, max = 6.0F, step = 0.1F, suffix = " blocks")
-	public float reachDistance = 3.0F;
+	@Slider(min = 3.05F, max = 3.15F, step = 0.1F, suffix = " ")
+	public float reachDistance = 3.10F;
 
 	public HitregOptimizerMod() {
 		super("Hitreg Optimizer", "hitreg_optimizer", "Increases your reach/attack range for better hit registration.", ModCategory.COMBAT);
